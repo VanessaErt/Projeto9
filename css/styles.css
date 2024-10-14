@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../assets/Fontes/Quicksand/static/Quicksand-Medium.ttf')
+}
+
+@font-face {
+    font-family: 'Quicksand-semibold';
+    src: url('../assets/Fontes/Quicksand/static/Quicksand-SemiBold.ttf')
+}
+
+/* Estilo geral */
+ body {
+    font-family: 'Quicksand';
+    background-color: #f8f9fa;
+    position: relative; 
+}
+
+/* Estilo do container principal */
+.container {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo da barra de navegação */
+.navbar {
+    height: 150px; 
+    background-color: #020B40; 
+    color: #F2F2F2 !important; 
+    justify-content: space-between; 
+    position: relative; 
+    font-family: 'Quicksand';
+}
+
+.navbar-brand {
+    color: #F2F2F2 !important;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.navbar-brand img {
+    max-width: 300px;
+    height: auto; 
+    margin-top: 20px;
+    transition: transform 0.3s ease; 
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1); 
+}
+
+.navbar-nav .nav-link {
+    color: #F2F2F2 !important; 
+    font-size: 1.2rem; 
+    margin-right: 40px;
+    position: relative; 
+    padding-bottom: 10px; 
+    transition: color 0.3s ease; 
+}
+
+.navbar-nav .nav-link.active::after {
+    content: ''; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 3px; 
+    background-color: #FF6347; 
+    transition: width 0.3s ease; 
+}
+
+.navbar-nav .nav-link.active:hover::after {
+    width: 50%; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FF6347; 
+}
+
+/* Estilo para o conteúdo da página Home */
+#home-content-wrapper {
+    padding: 20px; 
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc;
+}
+
+.home-header {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.home-header h1 {
+    font-size: 2rem;
+    color: #2155BF;
+    font-family: 'Quicksand-semibold';
+}
+
+.home-content {
+    font-size: 1.1rem; 
+    line-height: 1.6; 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+.btn-expand {
+    margin-right: 10px; 
+    margin-bottom: 15px;
+}
+
+/* Estilo da imagem */
+.image-container {
+    text-align: center; 
+    margin-top: 20px; 
+}
+
+#minha-imagem {
+    width: 800px; 
+    height: 600px; 
+}
+
+/* Estilos do contato */
+#contato {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.titulo{
+    text-align: center;
+    color: #2155BF;
+
+}
+
+.content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo do botão Whatsapp */
+.btn-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; 
+    opacity: 1; 
+    animation: blink 2s infinite;
+}
+
+/* Animação do botão Whatsapp */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Estilo do Footer*/
+footer {
+    background-color: #020B40; 
+    color: #F2F2F2; 
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    max-height: 250px; 
+    font-family: 'Quicksand';
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 80%;
+    margin: 0 auto;
+}
+
+.novidades, .footer-contact {
+    flex: 1;
+    box-sizing: border-box;
+    white-space: nowrap; 
+}
+
+.footer-contact {
+    text-align: left; 
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.novidades h3, .footer-contact h3 {
+    margin: 5px 0;
+    font-size: 1.5rem;
+}
+
+.novidades p, .footer-contact p {
+    margin: 5px 0;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 10px;
+}
+
+.redes-sociais a {
+    display: inline-block;
+    margin: 0 10px; 
+    color: #F2F2F2; 
+    font-size: 2rem; 
+    transition: color 0.3s ease; 
+}
+
+.redes-sociais a:hover {
+    color: #2155BF; 
+}
+
+.redes-sociais a:hover .bi-instagram {
+    color: #e4405f; 
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #FF6347; 
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer > p {
+    margin-top: 10px;
+    font-size: 1rem;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Autos Prime</title>
+</head>
+<body>
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-auto" href="index.html">
+                <img src="assets/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo das Páginas -->
+    <div id="home-content-wrapper" class="home-container">
+        <div class="home-header">
+            <h1>Home</h1>
+        </div>
+        <div class="home-content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+            </p>
+            <button class="btn btn-primary btn-expand" onclick="expandText('+', 0)">+</button>
+            <button class="btn btn-danger btn-expand" onclick="expandText('-', 0)">-</button>
+        
+            <p>
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin ac dui eu nisi eleifend viverra.
+            </p>
+            <button class="btn btn-primary btn-expand" onclick="expandText('+', 1)">+</button>
+            <button class="btn btn-danger btn-expand" onclick="expandText('-', 1)">-</button>
+        
+            <p>
+                Nam maximus ultricies ultricies. Etiam sit amet orci a justo gravida consequat.
+            </p>
+            <button class="btn btn-primary btn-expand" onclick="expandText('+', 2)">+</button>
+            <button class="btn btn-danger btn-expand" onclick="expandText('-', 2)">-</button>
+        </div>
+        <div class="image-container">
+            <img id="minha-imagem" src="assets/imagem-1.png" onmouseover="changeImage()" onmouseout="restoreImage()">
+        </div>
+    </div>
+
+    <!-- Botão de WhatsApp Fixo -->
+    <a href="https://api.whatsapp.com/send?phone=5551995987877" class="btn-whatsapp" target="_blank">
+        <img src="assets/whatsapp.png" alt="WhatsApp">
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="novidades">
+                <h3>NOVIDADES?</h3>
+                <p>Siga-nos em nossas redes sociais para ficar por dentro de promoções, ações e novidades =)</p>
+                <div class="redes-sociais">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h3>CONTATO:</h3>
+                <p><i class="bi bi-geo-alt"></i> Rua Exemplo 1234 - Ivoti / RS</p>
+                <p><i class="bi bi-telephone"></i> xx xxxx-xxxx</p>
+                <p><i class="bi bi-whatsapp"></i> xx xxxx-xxxx</p>
+                <p><i class="bi bi-envelope"></i> <a href="mailto:contato@autosprime.com.br">contato@autosprime.com.br</a></p>
+            </div>
+        </div>
+        <p>&copy; 2024 Autos Prime. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
